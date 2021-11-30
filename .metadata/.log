@@ -2854,3 +2854,39 @@ java.util.ConcurrentModificationException
 
 !ENTRY org.eclipse.cdt.core 1 0 2021-11-11 01:21:32.499
 !MESSAGE Indexed 'Practica01' (99 sources, 210 headers) in 35,7 sec: 29.582 declarations; 93.572 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0,12 %)
+!SESSION 2021-11-23 02:42:19.541 -----------------------------------------------
+eclipse.buildId=Version 1.7.0
+java.version=11.0.10
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_AR
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-11-23 02:43:01.582
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-11-23 02:43:02.282
+!MESSAGE Log4j initialized with config file /home/rizohector/cursos/cese/github/PdM_workspace/.metadata/.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-11-23 02:43:31.222
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2021-11-30 03:46:39.325 -----------------------------------------------
+eclipse.buildId=Version 1.7.0
+java.version=11.0.10
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_AR
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-11-30 03:47:21.982
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-11-30 03:47:22.460
+!MESSAGE Log4j initialized with config file /home/rizohector/cursos/cese/github/PdM_workspace/.metadata/.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-11-30 03:48:09.504
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-11-30 03:53:47.802
+!MESSAGE Indexed 'Practica3-1' (101 sources, 215 headers) in 75,7 sec: 29.679 declarations; 93.774 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0,12 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-11-30 04:07:50.008
+!MESSAGE Indexed 'Practica3-2' (101 sources, 213 headers) in 44,1 sec: 29.630 declarations; 93.650 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0,12 %)

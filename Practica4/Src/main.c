@@ -22,8 +22,7 @@ int main(void)
   printf("** Test finished successfully. ** \n\r");
 
   char myString[]="Hola Mundo. Muy buena materia PdM.\n\r";
-  //pstring= "0x61";
-  /* Infinite loop */
+
   while (1)
   {
 

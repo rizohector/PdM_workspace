@@ -39,13 +39,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  17 .debug_macro  000031e0  00000000  00000000  0002ec48  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_line   0000b623  00000000  00000000  00031e28  2**0
+ 18 .debug_line   0000b731  00000000  00000000  00031e28  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_str    000e3353  00000000  00000000  0003d44b  2**0
+ 19 .debug_str    000e3358  00000000  00000000  0003d559  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .comment      00000053  00000000  00000000  0012079e  2**0
+ 20 .comment      00000053  00000000  00000000  001208b1  2**0
                   CONTENTS, READONLY
- 21 .debug_frame  000025c0  00000000  00000000  001207f4  2**2
+ 21 .debug_frame  000025c0  00000000  00000000  00120904  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -5054,8 +5054,7 @@ int main(void)
  8002114:	6020      	str	r0, [r4, #0]
  8002116:	3404      	adds	r4, #4
  8002118:	7021      	strb	r1, [r4, #0]
-  //pstring= "0x61";
-  /* Infinite loop */
+
   while (1)
   {
 

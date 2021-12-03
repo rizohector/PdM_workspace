@@ -100,10 +100,21 @@ int main(void)
     Error_Handler();
   }
 
+  char miString[]="\n\rHola Mundo. Muy buen programa.\n\r";
   /* Output a message on Hyperterminal using printf function */
   printf("\n\r UART Printf Example: retarget the C library printf function to the UART\n\r");
   printf("** Test finished successfully. ** \n\r");
 
+  //uint8_t miString[]="Hola mundo";//nuevo
+  //HAL_StatusTypeDef estadoUart;//nuevo
+
+  HAL_UART_Transmit(&UartHandle, (uint8_t*)miString,sizeof(miString)/sizeof(char),0xFFFF);//nuevo
+ //SE CASTEA EL CHAR A ENTERO EN UINT8_T*, SE TRANSFORMA EL CHART EN ENTERO SIN SIGNO. ESTO ES
+  //PORQUE LA FUNCIÓN RECIBE UN ENTERO SIN SIGNO, NO UN CHART, EN C AMBOS LLEGANA  255.
+  HAL_UART_Transmit(&UartHandle, (uint8_t*)miString,16,0xFFFF);
+  //"UART" LA FUNCIÓN RECIBE UN PUNTERO A LA UART QUE ES UN ESTRUCTURA CON TODOS LOS PARÁMETOS QUE IDENTIFICA
+  //A LA UART PARA QUE EL PERIFERICO SEPA COMO TRATARLA. EL "PDATA" ES UN PUNTERO A LA INFORMACIÓN QUE ES LA CADENA DE
+  //CARACTERES A TRANSMITIR. "SIZE" EL TAMAÑO, HASTA DONDE IMPRIMIR. ULTIMO ES EL PARÁMETRO "TIMEOUT"
   /* Infinite loop */
   while (1)
   {

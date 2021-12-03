@@ -1,7 +1,24 @@
-04:18:25 **** Incremental Build of configuration Debug for project Practica3-2 ****
+03:58:48 **** Incremental Build of configuration Debug for project Practica4 ****
 make -j2 all 
-arm-none-eabi-size   Practica3-2.elf 
+arm-none-eabi-size   Practica4.elf 
    text	   data	    bss	    dec	    hex	filename
-   7124	     36	   1628	   8788	   2254	Practica3-2.elf
+  12964	    132	   1668	  14764	   39ac	Practica4.elf
+Finished building: default.size.stdout
+ 
+
+03:58:50 Build Finished. 0 errors, 0 warnings. (took 1s.867ms)
+
+03:58:52 **** Incremental Build of configuration Debug for project Practica4 ****
+make -j2 all 
+arm-none-eabi-size   Practica4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12964	    132	   1668	  14764	   39ac	Practica4.elf
+Finished building: default.size.stdout
+ 
+03:58:55 **** Incremental Build of configuration Debug for project Practica4 ****
+make -j2 all 
+arm-none-eabi-size   Practica4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12964	    132	   1668	  14764	   39ac	Practica4.elf
 Finished building: default.size.stdout
  

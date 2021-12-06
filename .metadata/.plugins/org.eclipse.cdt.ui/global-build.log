@@ -1,24 +1,14 @@
-03:58:48 **** Incremental Build of configuration Debug for project Practica4 ****
+12:49:45 **** Incremental Build of configuration Debug for project Trabajo Practico Final_V1 ****
 make -j2 all 
-arm-none-eabi-size   Practica4.elf 
+arm-none-eabi-size   Trabajo\ Practico\ Final_V1.elf 
    text	   data	    bss	    dec	    hex	filename
-  12964	    132	   1668	  14764	   39ac	Practica4.elf
+  13992	    136	   1704	  15832	   3dd8	Trabajo Practico Final_V1.elf
 Finished building: default.size.stdout
  
-
-03:58:50 Build Finished. 0 errors, 0 warnings. (took 1s.867ms)
-
-03:58:52 **** Incremental Build of configuration Debug for project Practica4 ****
+12:50:13 **** Incremental Build of configuration Debug for project Trabajo Practico Final_V1 ****
 make -j2 all 
-arm-none-eabi-size   Practica4.elf 
+arm-none-eabi-size   Trabajo\ Practico\ Final_V1.elf 
    text	   data	    bss	    dec	    hex	filename
-  12964	    132	   1668	  14764	   39ac	Practica4.elf
-Finished building: default.size.stdout
- 
-03:58:55 **** Incremental Build of configuration Debug for project Practica4 ****
-make -j2 all 
-arm-none-eabi-size   Practica4.elf 
-   text	   data	    bss	    dec	    hex	filename
-  12964	    132	   1668	  14764	   39ac	Practica4.elf
+  13992	    136	   1704	  15832	   3dd8	Trabajo Practico Final_V1.elf
 Finished building: default.size.stdout
  

@@ -1,0 +1,10 @@
+12:50:13 **** Incremental Build of configuration Debug for project Trabajo Practico Final_V1 ****
+make -j2 all 
+arm-none-eabi-size   Trabajo\ Practico\ Final_V1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13992	    136	   1704	  15832	   3dd8	Trabajo Practico Final_V1.elf
+Finished building: default.size.stdout
+ 
+
+12:50:15 Build Finished. 0 errors, 0 warnings. (took 1s.97ms)
+

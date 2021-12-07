@@ -44,6 +44,7 @@ void uartSendString (uint8_t timerDuration)
 	char string1[]="\n\r Timer de 250 mseg.\n\r";
 	char string2[]="\n\r Timer de 500 mseg.\n\r";
 	char string3[]="\n\r Timer de 1 seg.\n\r";
+	char string4[]="\n\r El tiempo se cumplio \n\r";
 
 	switch(timerDuration)
 	  {
@@ -64,7 +65,14 @@ void uartSendString (uint8_t timerDuration)
 	         HAL_UART_Transmit(&UartHandle,(uint8_t *) string3, strlen(string3), 0xFFFF);
 	         break;
 	        }
-	  }
+
+		case END_DURATION:
+		    {
+			 HAL_UART_Transmit(&UartHandle,(uint8_t *)string4, strlen(string4), 0xFFFF);
+	         break;
+		    }
+		}
+
 }
 
 

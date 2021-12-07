@@ -32,8 +32,8 @@ bool_t delayRead(delay_t * delay)
        if((tick_t)(HAL_GetTick()-delay->startTime)>=delay->duration)
 
          {
-          timeArrived=true;
           delay->running=0;
+          timeArrived=true;
 
          }
       }

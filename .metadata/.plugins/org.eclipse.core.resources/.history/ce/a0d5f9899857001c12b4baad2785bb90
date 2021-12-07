@@ -1,0 +1,76 @@
+
+
+
+
+#include <API_timer.h>
+#include "API_delay.h"
+#include <stdbool.h>
+#include "API_debounce.h"
+#include "API_uart.h"
+#include "main.h"
+
+
+
+static timer_t1 timerState;
+
+#define DURATION_250 250 //macros privadas para que no se modifique de afuera
+#define DURATION_500 500
+#define DURATION_1000 1000
+
+
+
+static delay_t timer;
+
+
+static uint8_t change=0, flag=0;
+
+void timerInit(void)
+{
+	timerState=change;
+	switch(timerState)
+			     {
+			      case DURATION250:
+			          {
+				       delayInit(&timer,DURATION_250);
+				       BSP_LED_On(LED1);
+				       uartSendString(DURATION250);
+				       break;
+			          }
+			      case DURATION500:
+			          {
+				       delayInit(&timer,DURATION_500);
+				       BSP_LED_On(LED1);
+				       uartSendString(DURATION500);
+				       break;
+			          }
+
+			      case DURATION1000:
+				      {
+		               delayInit(&timer,DURATION_1000);
+		               BSP_LED_On(LED1);
+					   uartSendString(DURATION1000);
+					   break;
+				      }
+			     }
+	if(change>=2) change=0;
+	else change++;
+}
+
+
+void timerUpdate(void)
+{
+	    flag=&timer->running;
+		if ((delayRead(&timer))& (!flag))
+		  {
+		   BSP_LED_Off(LED1);
+		   uartSendString(END_DURATION);
+		  }
+}
+
+
+
+
+
+
+
+

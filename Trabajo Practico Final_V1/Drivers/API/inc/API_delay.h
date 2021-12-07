@@ -15,6 +15,7 @@ typedef struct{
    tick_t startTime;
    tick_t duration;
    bool_t running;
+   bool_t offDuration
 } delay_t;
 
 
